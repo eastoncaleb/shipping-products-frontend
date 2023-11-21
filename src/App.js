@@ -14,7 +14,7 @@ function App() {
         </h3>
       </div>
 
-      <button className="bg-green-500 rounded-lg borde-2 border-b-4 border-green-600 mx-2 p-4 font-bold text-white hover:bg-green-400" onClick={() => setShowModal(true)}>Launch Calculator</button>
+      <button className="bg-green-500 rounded-lg border-b-4 border-green-600 focus:border-t-4 focus:border-b-0 focus:shadow-inner mx-2 p-4 font-bold text-white hover:bg-green-400" onClick={() => setShowModal(true)}>Launch Calculator</button>
 
       {showModal && (
         <CalculatorModal
