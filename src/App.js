@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import CalculatorModal from './components/CalculatorModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalculator } from '@fortawesome/free-solid-svg-icons'
@@ -37,10 +38,7 @@ function App() {
           <span className="text-green-600">We Recommend:</span> <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span>
         </div>}
       </div>
-
-      <div id="footer" className="bg-gray-200 w-full absolute bottom-0 p-4 md:p-8 text-sm text-gray-500 text-center md:text-right">
-        <p>Copyright &copy; 2023 Ship Sticks. All Rights Reserved.</p>
-      </div>
+      <Footer />
     </div>
   );
 }
