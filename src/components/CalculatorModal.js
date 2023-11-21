@@ -23,17 +23,18 @@ function CalculatorModal({ onClose, onCalculate }) {
 				setError('No matching product found');
 			}
 		} catch (error) {
-			setError('Failed to fetch product'); // Set a user-friendly error message
-			// Handle error (e.g., show error message)
+			setError('Failed to fetch product');
 		}
 	};
 
 	return (
-		<div className="modal fixed my-10 mx-4 bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 saturate-100 backdrop-contrast-100 rounded-lg p-10 shadow-lg">
+		<div className="modal fixed my-10 mx-4 bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 saturate-100 backdrop-contrast-100 rounded-lg pt-10 px-10 pb-12 shadow-lg">
 			<button className="absolute top-2 right-2 font-semibold text-lg rounded-full px-2 bg-gray-200 hover:bg-gray-100 mb-2 text-gray-500" onClick={onClose}>X</button>
+			<h2 className="text-white text-2xl lg:text-4xl font-bold text-shadow shadow-gray-700">Product Calculator</h2>
+			<p className="mb-4 text-white font-semibold text-shadow shadow-gray-700">Please enter the dimensions of the item you are wanting to ship</p>
 			<CalculatorForm onSubmit={handleSubmit} />
 			{error && <p className="text-shadow shadow-gray-700 text-center text-white underline decoration-solid decoration-red-500 underline-offset-4 decoration-4 font-bold mt-8">{error}</p>}
-			{productName && <p className="text-shadow shadow-gray-700 product-name text-center text-white font-bold mt-8 text-xl">Use this: <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span></p>}
+			{productName && <p className="text-shadow shadow-gray-700 product-name text-center text-white font-bold mt-8 text-xl lg:text-2xl">Use this: <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span></p>}
 		</div>
 	);
 }
