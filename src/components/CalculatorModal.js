@@ -29,7 +29,7 @@ function CalculatorModal({ onClose, onCalculate }) {
 	};
 
 	return (
-		<div className="modal fixed my-10 bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 saturate-100 backdrop-contrast-100 rounded-lg p-10 shadow-lg">
+		<div className="modal fixed my-10 mx-4 bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 saturate-100 backdrop-contrast-100 rounded-lg p-10 shadow-lg">
 			<button className="absolute top-2 right-2 font-semibold text-lg rounded-full px-2 bg-gray-200 hover:bg-gray-100 mb-2 text-gray-500" onClick={onClose}>X</button>
 			<CalculatorForm onSubmit={handleSubmit} />
 			{error && <p className="text-shadow shadow-gray-700 text-center text-white underline decoration-solid decoration-red-500 underline-offset-4 decoration-4 font-bold mt-8">{error}</p>}
