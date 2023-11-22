@@ -23,9 +23,9 @@ This is the frontend application for the Shipping Products Calculator. It is bui
 
 ## Running the Application Locally
 
-** Note: Please ensure the Rails backend server is running first. **
+**Note: Please ensure the Rails backend server is running first.**
 
-- From your terminal, run `npm start` which will start the React development server, typically on `http://localhost:3000`, however due to the Rails server already running, the server will ask "Would you like to run the app on another port instead?" to which you reply 'Y'. This should start the server on `http://localhost:3001` which is what the backend API is configured to support. The application should open automatically in your default web browser.
+From your terminal, run `npm start` which will start the React development server, typically on `http://localhost:3000`, however due to the Rails server already running, the server will ask "Would you like to run the app on another port instead?" to which you reply 'Y'. This should start the server on `http://localhost:3001` which is what the backend API is configured to support. The application should open automatically in your default web browser.
 
 ## Running Tests
 
@@ -38,8 +38,8 @@ Tests are written using Jest and React Testing Library.
 ## Using the Calculator
 
 - On the main page, click the "Launch Calculator" button to open the calculator modal.
-- Enter the dimensions and weight of the item you wish to ship.
-- Click the "Calculate" button to retrieve the recommended shipping product.
+- In the modal, enter the dimensions and weight of the item you wish to ship.
+- Click the "Find Product" button to retrieve the recommended shipping product.
 - The recommended product name will be displayed in the modal, the modal will dismiss itself after 5 seconds, and then the recommended product will appear on the main page.
 
 ## Notes
