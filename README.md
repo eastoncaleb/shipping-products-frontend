@@ -1,6 +1,6 @@
 # Shipping Products Calculator Frontend
 
-This is the frontend application for the Shipping Products Calculator. It is built using React and integrates with the Shipping Products API to provide a user interface for calculating the best matching shipping product based on dimensions and weight.
+This application is the front-end counterpart to the Shipping Products API application. It is built using React and integrates with the Shipping Products API to provide a user interface for calculating the best matching shipping product based on dimensions and weight.
 
 ## Features
 
@@ -13,17 +13,18 @@ This is the frontend application for the Shipping Products Calculator. It is bui
 
 - Node.js
 - npm (usually comes with Node.js)
+- Shipping Products API server should be running in a separate terminal window
 
 ## Local Setup
 
-**From your terminal, perform the following:**
+**From a new terminal window, perform the following:**
 1. Clone the repository from Github e.g. `git clone <repository-url>`
 2. Navigate into the repository folder e.g. `cd shipping-products-frontend`
 3. Install dependencies: `npm install`
 
 ## Running the Application Locally
 
-**Note: Please ensure the Rails backend server is running first.**
+**Note: Please ensure the Rails backend server is running first in a separate terminal window.**
 
 From your terminal, run `npm start` which will start the React development server, typically on `http://localhost:3000`, however due to the Rails server already running, the server will ask "Would you like to run the app on another port instead?" to which you reply 'Y'. This should start the server on `http://localhost:3001` which is what the backend API is configured to support. The application should open automatically in your default web browser.
 
