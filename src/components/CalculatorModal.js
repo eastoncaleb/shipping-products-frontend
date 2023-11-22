@@ -34,7 +34,7 @@ function CalculatorModal({ onClose, onCalculate }) {
 			<p className="mb-4 text-white font-semibold text-shadow shadow-gray-700">Please enter the dimensions of the item you are wanting to ship</p>
 			<CalculatorForm onSubmit={handleSubmit} />
 			{error && <p className="text-shadow shadow-gray-700 text-center text-white underline decoration-solid decoration-red-500 underline-offset-4 decoration-4 font-bold mt-8">{error}</p>}
-			{productName && <p className="text-shadow shadow-gray-700 product-name text-center text-white font-bold mt-8 text-xl lg:text-2xl">Use this: <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span></p>}
+			{productName && <p data-testid="recommended-product-modal" className="text-shadow shadow-gray-700 product-name text-center text-white font-bold mt-8 text-xl lg:text-2xl">Use this: <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span></p>}
 		</div>
 	);
 }

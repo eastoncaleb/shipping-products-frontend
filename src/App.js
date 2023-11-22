@@ -18,6 +18,7 @@ function App() {
         <p className="text-gray-600 w-full mb-8 text-lg lg:text-xl font-semibold">Use our handy calculator below and we will recommend one of our products for you!</p>
         <button
           className="text-lg md:text-2xl bg-green-500 rounded-lg border-b-4 border-green-600 focus:border-t-4 focus:border-b-0 focus:shadow-inner mx-auto p-4 font-bold text-white hover:bg-green-400"
+          data-testid="launch-calculator-button"
           onClick={() => {
             setShowModal(true);
             setProductName('');
@@ -34,7 +35,7 @@ function App() {
       )}
 
       <div className="flex w-full md:w-1/2">
-        {productName && <div className="text-gray-700 w-full text-2xl mt-4 mb-10 font-bold text-center tracking-wide">
+        {productName && <div data-testid="recommended-product-homepage" className="text-gray-700 w-full text-2xl mt-4 mb-10 font-bold text-center tracking-wide">
           <span className="text-green-600">We Recommend:</span> <span className="underline decoration-wavy decoration-green-500 underline-offset-8">{productName}</span>
         </div>}
       </div>

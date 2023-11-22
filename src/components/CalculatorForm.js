@@ -52,6 +52,7 @@ function CalculatorForm({ onSubmit }) {
 				</div>
 				<button
 					type="submit"
+					data-testid="find-product-button"
 					className="w-full my-4 lg:my-0 lg:w-auto bg-green-500 rounded-lg border-b-4 border-green-600 focus:border-t-4 focus:border-b-0 focus:shadow-inner mx-0 lg:ml-2 p-4 font-bold text-white hover:bg-green-400">
 					Find Product
 				</button>
