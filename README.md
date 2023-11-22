@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Shipping Products Calculator Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Shipping Products Calculator. It is built using React and integrates with the Shipping Products API to provide a user interface for calculating the best matching shipping product based on dimensions and weight.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Interactive calculator for determining the appropriate shipping product
+- Integration with the Shipping Products API for real-time data retrieval
+- Responsive design for optimal user experience across various devices
+- Styled using Tailwind
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js
+- npm (usually comes with Node.js)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Local Setup
 
-### `npm test`
+**From your terminal, perform the following:**
+1. Clone the repository from Github e.g. `git clone <repository-url>`
+2. Navigate into the repository folder e.g. `cd shipping-products-frontend`
+3. Install dependencies: `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running the Application Locally
 
-### `npm run build`
+** Note: Please ensure the Rails backend server is running first. **
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- From your terminal, run `npm start` which will start the React development server, typically on `http://localhost:3000`, however due to the Rails server already running, the server will ask "Would you like to run the app on another port instead?" to which you reply 'Y'. This should start the server on `http://localhost:3001` which is what the backend API is configured to support. The application should open automatically in your default web browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running Tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the automated tests: from your terminal, run `npm test`.
 
-### `npm run eject`
+### Notes on Testing
+Ensure all dependencies are installed before running the tests.
+Tests are written using Jest and React Testing Library.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Using the Calculator
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- On the main page, click the "Launch Calculator" button to open the calculator modal.
+- Enter the dimensions and weight of the item you wish to ship.
+- Click the "Calculate" button to retrieve the recommended shipping product.
+- The recommended product name will be displayed in the modal, the modal will dismiss itself after 5 seconds, and then the recommended product will appear on the main page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+- **Frontend Repository URL**: Replace `<frontend-repository-url>` with the actual URL of your frontend repository.
+- Ensure the Shipping Products API is running to enable real-time data retrieval.
